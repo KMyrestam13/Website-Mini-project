@@ -1,5 +1,4 @@
 
-
 /*Header Styles*/
 
 header {
@@ -47,15 +46,26 @@ header {
 }
 
 .nav-links a:hover {
-  color: #a0522d; /* Change link color on hover */
+  color: #007bff; /* Change link color on hover */
 }
 
 /*Main Content & Cards*/
-
 .card-img-top {
-    width: 100%;
-    height: 200px; 
-    object-fit: cover;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+  
+}
+.card{
+    border:1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0, 0.1);
+    margin-bottom: 20px;
+}
+.card .product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
 }
 
 /*Footer Styles*/
@@ -63,4 +73,17 @@ footer{
     background-color:#f7f7f7;
     padding:20px;
     border-top:1px solid #ddd;
+    display:flex; /* Flexbox for alignment */
+    justify-content: space-around; /* Pushes content to the center */
+    align-items: center; /* Vertically centers the items */
+}
+
+.social-icons a {
+    font-size:24px;
+    margin-left:15px;
+    color:#555;
+}
+
+.social-icons a:hover {
+  color: #007bff; /* Change icon color on hover */
 }
