@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav role="navigation">
         <div class="logo-container">
           <a href="index.html">
                 <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/16830190/1498589015.jpg" alt="Munamii Cakery Logo">
@@ -29,7 +29,7 @@
     </header>
     
     <main>
-    <section>
+    <section class="contact-section">
         <h2>Contact Us</h2>
         <h3>Home Delivery</h3>
         <p>We offer home delivery service to all of Stockholm and Malmö with additional cost.</p>
@@ -37,13 +37,13 @@
         <p>You can pick up your order at Via la Costa Avenue, Blue Port gated neighborhood. We will send you the GPS location via WhatsApp.</p>
         <h3>Order Information</h3>
         <p>Orders must be placed 2 days in advance for greater security, processing and availability. Our hours are Tuesday to Saturday, from 9 a.m. to 2 p.m.</p>
-        <form>
+        <form class="contact-form">
             <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" required aria-label="Your Name">
             <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" required aria-label="Your Email">
             <label for="message">Your Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+            <textarea id="message" name="message" rows="5" required aria-label="Your Message"></textarea>
             <button type="submit">Send Message</button>
         </form>
     </section>
@@ -58,10 +58,10 @@
             </p>
         </address>
          <div class="social-icons">
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
       </div>
     </footer>
   </body>

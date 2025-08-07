@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav role="navigation">
         <div class="logo-container">
             <a href="index.html">
                 <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/16830190/1498589015.jpg" alt="Munamii Cakery Logo">
@@ -29,13 +29,15 @@
       </nav>
     </header>
     <main>
+        <section class="container">
       <h1>Welcome to Munamii Cakery</h1>
       <p>Your one-stop shop for delicious cakes and pastries!</p>
+      </section>
       <section class="email-signup">
         <h2>Subscribe to our newsletter</h2>
-        <form>
-          <label for="email">Enter your email:</label>
-          <input type="email" id="email" name="email" required placeholder="Enter your email address">
+        <form class="email-form">
+          <label for="email" >Enter your email:</label>
+          <input type="email" id="email" name="email" required placeholder="Enter your email address" aria-label="Email address">
           <button type="submit">Subscribe</button>
           </form>
           </section>
@@ -50,10 +52,10 @@
             </p>
         </address>
          <div class="social-icons">
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
       </div>
     </footer>
   </body>
